@@ -271,13 +271,18 @@ section.newsletter .disappearing-thingy.active {
     height: 70px;
   }
 
+  .time-display {
+    justify-items: center;
+  }
+
   .time-display div.days::after,
   .time-display div.hours::after,
   .time-display div.mins::after {
-    right: -10px;
+    right: -25px;
   }
 
   .time-display .value {
     font-size: 1.4rem;
+    font-weight: bold;
   }
 }

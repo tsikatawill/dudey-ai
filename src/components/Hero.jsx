@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="container py-5 d-flex align-items-center">
-        <div className="text w-100">
+        <div className="text w-100 text-center text-md-start">
           <h1>Meet our AI Chatbot Solution</h1>
           <p className="my-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="image w-100">
+        <div className="image d-none d-md-block w-100">
           <img src={HeroImg} alt="hero" className="img-fluid" />
         </div>
       </div>
