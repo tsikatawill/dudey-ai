@@ -6,30 +6,63 @@ const Countdown = () => {
   const [mins, setMins] = React.useState(9);
   const [secs, setSecs] = React.useState(12);
 
+  let interval;
+
+  const startTimer = () => {
+    const countDownDate = new Date("May 30,2022 ").getTime();
+
+    interval = setInterval(() => {
+      const now = new Date().getTime();
+
+      const distance = countDownDate - now;
+
+      const dayss = Math.floor(distance / (24 * 60 * 60 * 1000));
+      const hourss = Math.floor(
+        (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
+      );
+      const minutess = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
+      const secondss = Math.floor((distance % (60 * 1000)) / 1000);
+
+      if (distance < 0) {
+        clearInterval(interval.current);
+      } else {
+        // Update Timer
+        setDays(dayss);
+        setHours(hourss);
+        setMins(minutess);
+        setSecs(secondss);
+      }
+    });
+  };
+
   React.useEffect(() => {
-    const eta = new Date("December 25, 2022 00:00:00").getTime();
-    const today = new Date().getTime();
-    const gap = eta - today;
-
-    // convert to milliseconds
-    const second = 1000;
-    const min = second * 60;
-    const hr = min * 60;
-    const day = hr * 24;
-
-    let dayss = Math.floor(gap / day);
-    let hourss = Math.floor((gap % day) / hr);
-    let minss = Math.floor((gap % hr) / min);
-    let secss = Math.floor((gap % min) / second);
-
-    setInterval(() => {
-      setDays(dayss);
-      setHours(hourss);
-      setMins(minss);
-      setSecs(secss);
-    }, 1000);
-    console.log("Render");
+    startTimer();
   });
+
+  //   React.useEffect(() => {
+  //     const eta = new Date("December 25, 2022 00:00:00").getTime();
+  //     const today = new Date().getTime();
+  //     const gap = eta - today;
+
+  //     // convert to milliseconds
+  //     const second = 1000;
+  //     const min = second * 60;
+  //     const hr = min * 60;
+  //     const day = hr * 24;
+
+  //     let dayss = Math.floor(gap / day);
+  //     let hourss = Math.floor((gap % day) / hr);
+  //     let minss = Math.floor((gap % hr) / min);
+  //     let secss = Math.floor((gap % min) / second);
+
+  //     setInterval(() => {
+  //       setDays(dayss);
+  //       setHours(hourss);
+  //       setMins(minss);
+  //       setSecs(secss);
+  //     }, 1000);
+  //     console.log("Render");
+  //   });
   return (
     <div className="countdown my-4">
       <div className="time-display">
