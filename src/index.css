@@ -265,4 +265,19 @@ section.newsletter .disappearing-thingy.active {
     margin: 0 auto;
     width: 100%;
   }
+
+  .time-display > div {
+    width: 70px;
+    height: 70px;
+  }
+
+  .time-display div.days::after,
+  .time-display div.hours::after,
+  .time-display div.mins::after {
+    right: -10px;
+  }
+
+  .time-display .value {
+    font-size: 1.4rem;
+  }
 }
