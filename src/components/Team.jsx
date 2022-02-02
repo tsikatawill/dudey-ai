@@ -6,9 +6,9 @@ const Team = () => {
   return (
     <section className="team">
       <div className="container">
-        <div className="header text-center">
-          <h2 className="text--primary">The Advisors And The Team</h2>
-          <p style={{ maxWidth: "400px", margin: "auto" }}>
+        <div className="header">
+          <h2>The Advisors And The Team</h2>
+          <p>
             Our Main Mission: To provide affordable groundbreaking AI products
             that give businesses of all sizes
           </p>

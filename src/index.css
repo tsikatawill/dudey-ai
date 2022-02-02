@@ -291,6 +291,32 @@ section.team .member-card .icon-bg {
   background: var(--pale-primary);
 }
 
+section .header {
+  text-align: center;
+}
+
+section.communication-channels {
+  background: var(--pale-primary);
+}
+
+section .header h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+section .header p {
+  max-width: 400px;
+  margin: auto;
+}
+
+section.communication-channels .channel-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 800px;
+  margin: auto;
+  gap: 1rem;
+}
+
 @media screen and (max-width: 991px) {
   .hero .bottom {
     width: 100%;

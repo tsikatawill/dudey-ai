@@ -1,4 +1,6 @@
 import React from "react";
+import BottomCta from "./components/BottomCta";
+import CommunicationChannels from "./components/CommunicationChannels";
 import DetailCards from "./components/DetailCards";
 import Header from "./components/Header";
 import Newsletter from "./components/Newsletter";
@@ -17,6 +19,8 @@ const App = () => {
       <ProductsOne />
       <Team />
       <ProductsTwo />
+      <CommunicationChannels />
+      <BottomCta />
       <div className="space" style={{ height: "400px" }}></div>
     </div>
   );
