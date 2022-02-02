@@ -10,25 +10,30 @@ const WhyInvest = () => {
         <div className="left mb-5 mb-lg-0">
           <h2 className="text--primary">Why Invest?</h2>
           <p className="my-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            quasi, itaque, atque reiciendis sed odit commodi et quis eveniet aut
-            vero, assumenda molestias. Tempora officia esse perspiciatis
-            reprehenderit adipisci. Sit!
+            Our Main Mission: To provide affordable groundbreaking AI products
+            that give businesses of all sizes a way to take advantage of the AI
+            revolution.
           </p>
           <Button version="primary" text="BUY COINS NOW" />
         </div>
         <div className="right reason-cards w-100">
           <ReasonCard
             title="Melior marketplace"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel obcaecati impedit molestias tenetur magni consectetur quae ut officia, ex hic, ipsa aliquam voluptatem dolorum porro, illum animi nulla ducimus!"
+            text="They will have the option to either buy tokens on the market
+            or pay dudey in flat so we can take care of the conversation behind
+            the scenes. Melior will undertake to do all flat to token transaction."
           />
           <ReasonCard
             title="Melior marketplace"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel obcaecati impedit molestias tenetur magni consectetur quae ut officia, ex hic, ipsa aliquam voluptatem dolorum porro, illum animi nulla ducimus!"
+            text="They will have the option to either buy tokens on the market
+            or pay dudey in flat so we can take care of the conversation behind
+            the scenes. Melior will undertake to do all flat to token transaction."
           />
           <ReasonCard
             title="Melior marketplace"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vel obcaecati impedit molestias tenetur magni consectetur quae ut officia, ex hic, ipsa aliquam voluptatem dolorum porro, illum animi nulla ducimus!"
+            text="They will have the option to either buy tokens on the market
+            or pay dudey in flat so we can take care of the conversation behind
+            the scenes. Melior will undertake to do all flat to  token transaction."
           />
         </div>
       </div>

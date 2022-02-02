@@ -1,10 +1,29 @@
 import React from "react";
+import { FaAndroid } from "react-icons/fa";
 import Hero from "./Hero";
 
 const Header = () => {
+  const [navOpen, setNavOpen] = React.useState(false);
+  const [navCollapsed, setNavCollapsed] = React.useState(false);
+
+  React.useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 769) {
+        setNavCollapsed(true);
+      } else {
+        setNavCollapsed(false);
+      }
+    });
+
+    return () => {
+      window.removeEventListener("resize");
+    };
+  }, []);
   return (
     <header>
-      <nav className="navbar">
+      <nav
+        className={`navbar ${navCollapsed && "collapsed"} ${navOpen && "open"}`}
+      >
         <div className="container py-3 d-sm-flex justify-content-between align-items-center">
           <div className="logo">
             <span className="fw-bold">DUDEY.AI</span>
@@ -16,12 +35,15 @@ const Header = () => {
             <li>
               <a href="#why-invest">Why invest</a>
             </li>
-            <li>{/* <a href="/">Token sale</a> */}Token sale</li>
-            <li>{/* <a href="#why-invest">FAQ</a> */}FAQ</li>
-            <li>
-              <button className="btn btn-light">GET WHITELISTED</button>
+            <li>Token sale</li>
+            <li>FAQ</li>
+            <li className="cta-w">
+              <button className="btn btn-light cta-w">GET WHITELISTED</button>
             </li>
           </ul>
+          <div className="toggle-btn" onClick={() => setNavOpen(!navOpen)}>
+            <FaAndroid size="20" />
+          </div>
         </div>
       </nav>
       <Hero />

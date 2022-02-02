@@ -10,9 +10,8 @@ const Hero = () => {
         <div className="text w-100 text-center text-md-start">
           <h1>Meet our AI Chatbot Solution</h1>
           <p className="my-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-            pariatur, ducimus blanditiis in vero, eos voluptate accusamus
-            consectetur.
+            Is a research, development and solutions provider company with a
+            vibrant research and development pipeline
           </p>
           <Countdown />
           <div className="bottom d-flex align-items-center justify-content-between">
