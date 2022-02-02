@@ -444,6 +444,7 @@ footer li a:hover {
   .time-display > div {
     width: 70px;
     height: 70px;
+    border-radius: 7px;
   }
 
   .time-display {

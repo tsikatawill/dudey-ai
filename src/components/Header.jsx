@@ -6,19 +6,24 @@ const Header = () => {
   const [navOpen, setNavOpen] = React.useState(false);
   const [navCollapsed, setNavCollapsed] = React.useState(false);
 
+  const modifyNavbar = () => {
+    setNavCollapsed(true);
+    if (window.innerWidth < 769) {
+      setNavCollapsed(true);
+    } else {
+      setNavCollapsed(false);
+    }
+  };
+
   React.useEffect(() => {
-    window.addEventListener("resize", () => {
-      if (window.innerWidth < 769) {
-        setNavCollapsed(true);
-      } else {
-        setNavCollapsed(false);
-      }
-    });
+    window.addEventListener("resize", modifyNavbar);
 
     return () => {
       window.removeEventListener("resize");
     };
   }, []);
+
+  React.useEffect(modifyNavbar, [navCollapsed]);
   return (
     <header>
       <nav
