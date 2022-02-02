@@ -230,7 +230,8 @@ section.newsletter .container {
   align-items: center;
 }
 
-section.newsletter .wrapper {
+section.newsletter .wrapper,
+.bottom-cta .container {
   max-width: 800px;
   padding: 2rem 1rem;
   width: 100%;
@@ -311,6 +312,18 @@ section.communication-channels .channel-cards {
   max-width: 800px;
   margin: auto;
   gap: 1rem;
+}
+
+section.bottom-cta {
+  background: linear-gradient(
+    to bottom right,
+    var(--pale-primary) 0% 50%,
+    var(--primary) 50% 100%
+  );
+}
+
+section.bottom-cta .container {
+  background: white;
 }
 
 @media screen and (max-width: 991px) {
