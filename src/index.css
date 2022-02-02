@@ -152,10 +152,6 @@ header li a:hover {
   font-size: 2rem;
 }
 
-.time-display .desc {
-  color: var(--pale-primary);
-}
-
 .hero .bottom {
   max-width: 400px;
 }
