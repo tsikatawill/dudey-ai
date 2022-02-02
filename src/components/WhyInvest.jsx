@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const WhyInvest = () => {
   return (
-    <section className="why-invest bg--pale-primary">
+    <section className="why-invest bg--pale-primary" id="why-invest">
       <div className="container d-lg-flex text-center text-md-start py-5">
         <div className="left mb-5 mb-lg-0">
           <h2 className="text--primary">Why Invest?</h2>

@@ -55,7 +55,7 @@ a {
   color: white;
 }
 
-header ul {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -224,14 +224,15 @@ section.newsletter {
   );
 }
 
-section.newsletter .container {
+section.newsletter .container,
+.bottom-cta .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 section.newsletter .wrapper,
-.bottom-cta .container {
+.bottom-cta .container .wrapper {
   max-width: 800px;
   padding: 2rem 1rem;
   width: 100%;
@@ -310,8 +311,22 @@ section.communication-channels .channel-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
+  justify-items: center;
   gap: 1rem;
+}
+
+section.communication-channels .detail-card {
+  position: relative;
+  width: 250px !important;
+}
+
+section.communication-channels .detail-card .icon-bg {
+  background: var(--primary);
+  position: absolute;
+  top: 0;
+  left: 100px;
+  transform: translate(0, -50%);
 }
 
 section.bottom-cta {
@@ -322,8 +337,35 @@ section.bottom-cta {
   );
 }
 
-section.bottom-cta .container {
-  background: white;
+section.bottom-cta .wrapper {
+  background: white !important;
+  border-radius: 10px;
+}
+
+footer {
+  background: var(--primary);
+}
+
+footer .container {
+  max-width: 600px;
+  margin: auto;
+}
+
+footer .logo {
+  color: white;
+}
+
+footer .nav-menu {
+  margin: auto;
+}
+
+footer li:not(:first-child) {
+  margin-left: 10px;
+}
+
+footer li a:hover {
+  transition: all 0.2s ease;
+  color: grey;
 }
 
 @media screen and (max-width: 991px) {

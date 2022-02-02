@@ -2,6 +2,7 @@ import React from "react";
 import BottomCta from "./components/BottomCta";
 import CommunicationChannels from "./components/CommunicationChannels";
 import DetailCards from "./components/DetailCards";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Newsletter from "./components/Newsletter";
 import ProductsOne from "./components/ProductsOne";
@@ -21,7 +22,7 @@ const App = () => {
       <ProductsTwo />
       <CommunicationChannels />
       <BottomCta />
-      <div className="space" style={{ height: "400px" }}></div>
+      <Footer />
     </div>
   );
 };
