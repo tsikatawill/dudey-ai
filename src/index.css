@@ -156,6 +156,10 @@ header li a:hover {
   color: var(--pale-primary);
 }
 
+.hero .bottom {
+  max-width: 400px;
+}
+
 section.detail-cards {
   background: linear-gradient(
     to bottom right,
@@ -206,6 +210,10 @@ section.detail-cards .detail-card svg {
 
 section.why-invest .icon-bg {
   margin: 0;
+}
+
+section.why-invest .left {
+  max-width: 400px;
 }
 
 .reason-card .image-wrapper {
@@ -261,6 +269,11 @@ section.newsletter .disappearing-thingy.active {
 }
 
 @media screen and (max-width: 991px) {
+  .hero .bottom {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+  }
   .products .text p {
     margin: 0 auto;
     width: 100%;
@@ -284,5 +297,11 @@ section.newsletter .disappearing-thingy.active {
   .time-display .value {
     font-size: 1.4rem;
     font-weight: bold;
+  }
+
+  .why-invest .left {
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
   }
 }
