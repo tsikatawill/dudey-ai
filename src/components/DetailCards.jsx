@@ -7,46 +7,45 @@ const DetailCards = () => {
     <section className="detail-cards py-5">
       <div className="container py-5">
         <DetailCard>
-          <div className="icon-bg" color="white">
-            <FaBeer size="40" />
-          </div>
-          <p className="lead fw-bold">Own a bot</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam,
-            aliquid harum fugiat labore pariatur quia placeat quis cumque
-            quisquam iusto aliquam necessitatibus amet dicta ea perferendis. Ex
-            doloribus optio ducimus!
-          </p>
-          <p className="text-primary">Learn more</p>
+          <InnerCardContent
+            image={<FaBeer size="30" />}
+            title="Own Machine Learning"
+            text="Melior has already developed its own Machine Learning, Neural
+            Network and Deep Learning models"
+            extraStuff={<p className="text--primary">Learn more</p>}
+          />
         </DetailCard>
         <DetailCard>
-          <div className="icon-bg" color="white">
-            <FaBeer size="40" />
-          </div>
-          <p className="lead fw-bold">Own a bot</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam,
-            aliquid harum fugiat labore pariatur quia placeat quis cumque
-            quisquam iusto aliquam necessitatibus amet dicta ea perferendis. Ex
-            doloribus optio ducimus!
-          </p>
-          <p className="text-primary">Learn more</p>
+          <InnerCardContent
+            image={<FaBeer size="30" />}
+            title="Own Machine Learning"
+            text="Melior has already developed its own Machine Learning, Neural
+            Network and Deep Learning models"
+            extraStuff={<p className="text--primary">Learn more</p>}
+          />
         </DetailCard>
         <DetailCard>
-          <div className="icon-bg">
-            <FaBeer size="40" />
-          </div>
-          <p className="lead fw-bold">Own a bot</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam,
-            aliquid harum fugiat labore pariatur quia placeat quis cumque
-            quisquam iusto aliquam necessitatibus amet dicta ea perferendis. Ex
-            doloribus optio ducimus!
-          </p>
-          <p className="text-primary">Learn more</p>
+          <InnerCardContent
+            image={<FaBeer size="30" />}
+            title="Own Machine Learning"
+            text="Melior has already developed its own Machine Learning, Neural
+            Network and Deep Learning models"
+            extraStuff={<p className="text--primary">Learn more</p>}
+          />
         </DetailCard>
       </div>
     </section>
+  );
+};
+
+export const InnerCardContent = ({ image, title, text, extraStuff }) => {
+  return (
+    <>
+      <div className="icon-bg">{image}</div>
+      <p className="lead fw-bold">{title}</p>
+      <p>{text}</p>
+      {extraStuff && extraStuff}
+    </>
   );
 };
 

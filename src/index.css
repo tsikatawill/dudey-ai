@@ -10,7 +10,7 @@
   ---primary-hover: #2a21ad;
   --secondary: #22ce04;
   --secondary-hover: #31d414;
-  --pale-primary: #fbeaff;
+  --pale-primary: rgba(106, 146, 248, 0.1);
 }
 
 body {
@@ -197,15 +197,15 @@ section.detail-cards .detail-card svg {
 }
 
 .detail-card {
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: white;
   color: black;
   text-align: center;
   padding: 2rem;
 }
 
-.detail-card .card--outlined {
-  border: 1px solid var(--pale-primary);
+.detail-card.card--outlined {
+  border: 1px solid grey;
 }
 
 section.why-invest .icon-bg {
@@ -266,6 +266,29 @@ section.newsletter .disappearing-thingy {
 section.newsletter .disappearing-thingy.active {
   transform: scale(1);
   opacity: 1;
+}
+
+section.team {
+  background: linear-gradient(
+    to bottom right,
+    white 0% 50%,
+    var(--pale-primary) 50% 100%
+  );
+}
+
+section.team .team-member-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+section.team .member-card .icon-bg {
+  overflow: hidden;
+  padding: 0;
+}
+
+.products-two {
+  background: var(--pale-primary);
 }
 
 @media screen and (max-width: 991px) {
