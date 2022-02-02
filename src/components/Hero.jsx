@@ -15,7 +15,7 @@ const Hero = () => {
             consectetur.
           </p>
           <Countdown />
-          <div className="bottom d-flex align-items-center debug justify-content-between">
+          <div className="bottom d-flex align-items-center justify-content-between">
             <Button version="secondary" text="JOIN WHITELIST" />
             <span className="division" style={{ fontSize: "2rem" }}>
               |
