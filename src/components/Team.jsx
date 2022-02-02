@@ -17,7 +17,10 @@ const Team = () => {
           <DetailCard version="outlined" extraClasses="member-card">
             <InnerCardContent
               image={
-                <img src="https://randomuser.me/api/portraits/women/24.jpg" />
+                <img
+                  src="https://randomuser.me/api/portraits/women/24.jpg"
+                  alt="user profile"
+                />
               }
               title="Jane Doe"
               extraStuff={
@@ -31,7 +34,10 @@ const Team = () => {
           <DetailCard version="outlined" extraClasses="member-card">
             <InnerCardContent
               image={
-                <img src="https://randomuser.me/api/portraits/women/12.jpg" />
+                <img
+                  src="https://randomuser.me/api/portraits/women/12.jpg"
+                  alt="user profile"
+                />
               }
               title="Janet Doe"
               extraStuff={
@@ -45,7 +51,10 @@ const Team = () => {
           <DetailCard version="outlined" extraClasses="member-card">
             <InnerCardContent
               image={
-                <img src="https://randomuser.me/api/portraits/men/24.jpg" />
+                <img
+                  src="https://randomuser.me/api/portraits/men/24.jpg"
+                  alt="user profile"
+                />
               }
               title="John Doe"
               extraStuff={
