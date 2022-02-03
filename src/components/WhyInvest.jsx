@@ -18,22 +18,22 @@ const WhyInvest = () => {
         </div>
         <div className="right reason-cards w-100">
           <ReasonCard
-            title="Melior marketplace"
+            title="Dudey marketplace"
             text="They will have the option to either buy tokens on the market
             or pay dudey in flat so we can take care of the conversation behind
-            the scenes. Melior will undertake to do all flat to token transaction."
+            the scenes. Dudey will undertake to do all flat to token transaction."
           />
           <ReasonCard
-            title="Melior marketplace"
+            title="Dudey marketplace"
             text="They will have the option to either buy tokens on the market
             or pay dudey in flat so we can take care of the conversation behind
-            the scenes. Melior will undertake to do all flat to token transaction."
+            the scenes. Dudey will undertake to do all flat to token transaction."
           />
           <ReasonCard
-            title="Melior marketplace"
+            title="Dudey marketplace"
             text="They will have the option to either buy tokens on the market
             or pay dudey in flat so we can take care of the conversation behind
-            the scenes. Melior will undertake to do all flat to  token transaction."
+            the scenes. Dudey will undertake to do all flat to  token transaction."
           />
         </div>
       </div>

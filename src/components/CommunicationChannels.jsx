@@ -9,9 +9,9 @@ const CommunicationChannels = () => {
     <section className="communication-channels">
       <div className="container">
         <div className="header">
-          <h2>Melior Official Communication Channels</h2>
+          <h2>Dudey Official Communication Channels</h2>
           <p>
-            We are happy to answer any of your question - below are Melior’s
+            We are happy to answer any of your question - below are Dudey’s
             official communication channels
           </p>
         </div>
